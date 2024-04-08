@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: #C1E0FF;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            padding: 8px 12px;
+        }
+
+        /* This is responsible for the separators in the navbar */
+        nav a:not(:last-child) {
+            border-right: 2px solid black;
+            padding-right: 4px;
+        }
+
+        .container {
+            padding: 16px;
+            display: flex;
+        }
+
+        img {
+            margin-right: 24px;
+            object-fit: none;
+        }
+        
+        hr {
+            border: 1px solid black;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- NOTE: You can copy paste the nav element (along with its CSS) to all other html files if you wish -->
+    <nav>
+        <a href="exercise-11-my-portfolio.html">Home</a>
+        <a href="exercises.html">Exercises</a>
+        <a href="exercise-10-designs.html">Designs</a>
+        <a href="https://idontknowanymore.site/fireworks">Fireworks</a>
+    </nav>
+    <hr>
+    <div class="container">
+        <img src="profile.png" alt="Profile Picture">
+        <section>
+            <h1>Chris Dominic Chan</h1>
+            <h2>Third year at Filamer Christian University. Aspiring to be {{ isPronouncedLeadingVowel(OCCUPATION) ? "an" : "a" }} {{ OCCUPATION }} at {{ COMPANY }}.</h2><!-- It's a joke -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis veritatis incidunt alias aperiam ducimus. Voluptas, perferendis sapiente eligendi consectetur deleniti hic odio consequatur modi iusto quas autem, nesciunt veritatis ullam! Earum voluptatibus voluptatem ullam, consequuntur ea eos eveniet iste, quis ut vitae reiciendis similique quidem blanditiis exercitationem cupiditate asperiores, cumque explicabo? Delectus commodi voluptate fuga distinctio cupiditate, maiores non error perspiciatis debitis sed repellat, ea nulla rerum nihil eos. Sunt ratione reiciendis commodi. Dignissimos eveniet libero magni perferendis adipisci amet commodi maxime assumenda ipsum facilis reiciendis officiis fugiat, odit veniam ipsa soluta possimus itaque quam nulla? Laborum vel nam praesentium!<p>
+        </section>
+    </div>
+</body>
+</html>
