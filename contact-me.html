@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        hr {
+            border: 1px solid black;
+            margin: 0;
+        }
+
+        /* This is responsible for the separators in the navbar */
+        nav a:not(:last-child) {
+            border-right: 2px solid black;
+            padding-right: 4px;
+        }
+
+        nav {
+            padding: 8px 12px;
+        }
+
+        .container {
+            padding: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="public/exercise-11-my-portfolio.html">Home</a>
+        <a href="public/exercises.html">Exercises</a>
+        <a href="public/exercise-10-designs.html">Designs</a>
+        <a href="https://idontknowanymore.site/fireworks">Fireworks</a>
+        <a href="contact-me.html">Contact Me</a>
+    </nav>
+    <hr>
+
+    <div class="container">
+        <h1>My Contact Details</h1>
+        <p>Some Address, Some City</p>
+        <p>+43 000-000-0000</p>
+        <p>some@email.com</p>
+
+        <form action="#">
+            <label for="name">Your Name: </label>
+            <input type="text" name="name" id="name">
+
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <br>
+            <label for="email-subscription">Do you want to be notified by our news letters?</label>
+            <input type="checkbox" name="email-subscription" id="email-subscription">
+
+            <br>
+            <br>
+            <label for="preferred-lang">Preferred language:</label>
+
+            <br>
+            <input type="radio" name="preferred-lang" id="eng" value="english">
+            <label for="eng">English</label>
+
+            <input type="radio" name="preferred-lang" id="fil" value="filipino">
+            <label for="fil">Filipino</label>
+
+            <input type="radio" name="preferred-lang" id="chn" value="chinese">
+            <label for="chn">中文</label>
+
+            <input type="radio" name="preferred-lang" id="jp" value="japanese">
+            <label for="jp">日本語</label>
+
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
