@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            transition: all 0.3s;
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+        }
+
+        hr {
+            border: 1px solid white;
+            margin: 0;
+        }
+
+        /* This is responsible for the separators in the navbar */
+        nav a:not(:last-child) {
+            border-right: 2px solid white;
+            padding-right: 4px;
+        }
+
+        nav {
+            padding: 8px 12px;
+        }
+
+        .container {
+            margin: 12px;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 24px;
+            border-radius: 12px;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 1px solid white;
+        }
+
+        td {
+            border: 1px solid white;
+            color: white;
+            padding: 8px 12px;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        }
+
+        h1 {
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        tr:nth-child(1), tr:nth-child(3) {
+            background: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="exercise-11-my-portfolio.html">Home</a>
+        <a href="my-skills.html">Skills</a>
+        <a href="exercises.html">Exercises</a>
+        <a href="exercise-10-designs.html">Designs</a>
+        <a href="https://idontknowanymore.site/fireworks">Fireworks</a>
+        <a href="contact-me.html">Contact Me</a>
+    </nav>
+    <hr>
+    <div class="container">
+        <h1>My Skills</h1>
+        <table>
+            <tr>
+                <td>Web Development</td>
+                <td>⭐⭐⭐⭐</td>
+                <td>Game Development</td>
+                <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>Graphic Design</td>
+                <td>⭐⭐⭐</td>
+                <td>Back-end Frameworks</td>
+                <td>⭐⭐⭐</td>
+            </tr>
+            <tr>
+                <td>System Programming</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Front-end Frameworks</td>
+                <td>⭐⭐⭐⭐</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <canvas id="cnv">
+        No Script
+    </canvas>
+    <script src="../assets/js/fireworks.bundle.js">
+
+    </script>
+</body>
+
+</html>
